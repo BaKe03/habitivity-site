@@ -1,113 +1,166 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    box-sizing: border-box;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 body {
-    margin: 0;
-    font-family "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    background: whitesmoke;
+  background: whitesmoke;
+  
 }
 
-.container {
-    padding: 20px;
-    background-color: whitesmoke;
-    border-radius: 15px;
+.myContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: whitesmoke; 
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.col-4 {
+  isplay: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ww {
+  margin-top: 50px;
+}
+
+blockquote {
+  text-align: center;
+  align-self: center;
+  font-size: 30px;
+  line-height: 45px;
+  border-left: 2px solid #fff;
+}
+
+blockquote span {
+  display: block;
+  text-align: right;
+  font-size: 15px;
+  line-height: 40px;
+  margin-top: 5px;
+  padding-right: 10px;
+  text-transform: uppercase;
+}
+
+.tweet-this {
+  font-family: 'Glegoo', serif;
+}
+
+img {
+  align-self: center;
+  border-radius: 5px;
 }
 
 h2 {
-    text-align: center;
-    font-weight: 400;
-    font-family: Century;
-    font-size: 35px;
+  text-align: center;
+  font-weight: 400;
+}
+
+h3 {
+  text-align: center;
 }
 
 .habits {
-    text-align: left;
-    //list-style: none;
+  text-align: left;
+  list-style: none;
 }
 
 .habits li {
-    border-bottom: 1px solid gray;
-    padding: 10px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
 }
 
 .habits label {
-    //flex: 1;
-    //cursor: pointer;
+  flex: 1;
+  cursor: pointer;
 }
 
 .habits input {
-    margin-right: 12px;
+  width: 100%;
 }
 
 .habits input {
-    display: none;
+  display: none;
 }
 
 .habits input + label:before {
-    content: "+";
-    margin-right: 12px;
-}
-
-.habits input + label span {
-    font-weight: 200;
-    font-size: 0.75rem;
+  content: "+";
+  margin-right: 5px;
 }
 
 .habits input:checked + label {
-    //text-decoration: line-through;
-    color: lightgrey;
+  text-decoration: line-through;
+  color: lightgrey;
+}
+
+.habits input + label span {
+  font-weight: 200;
+  font-size: 1rem;
 }
 
 .habits button {
-    padding-left: 30px;
-    background: none;
-    margin: 5px;
-    //outline: 0;
-    //border: 0;
-    border-radius: 10px;
+  padding-left: 30px;
+  background: none;
+  margin: 5px;
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
 }
 
 .add-habit {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid black;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
 }
 
 .add-habit input {
-    padding: 10px;
-    margin: 5px;
-    outline: 0;
-    border: 0;
-    border-radius: 100px;
+  padding: 10px;
+  margin: 5px;
+  outline: 0;
+  border: 0;
+  border-radius: 100px;
 }
 
 .add-habit select {
-    border-radius: 10px;
-    border: none;
+  border-radius: 10px;
+  border: none;
 }
 
 .frequency {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
+  padding:  5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.form-group {
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.shell {
+  height: 20px;
+  width: 400px;
+  border-radius: 13px;
+  background: linear-gradient(to right, #4c4ef9, #ffffff);
+  overflow: hidden;
+}
+
+.bar {
+  background: #333;
+  height: 20px;
+  float: right;
+}
+
+li {
+  font-size: 30px;
 }
