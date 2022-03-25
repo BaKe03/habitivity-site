@@ -1,42 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="habit-style.css" />
-    <title>Habit Tracker</title>
-  </head>
-  <body>
-    <div class="container">
-      <h2 class="habit-text">HABITS</h2>
-      <p></p>
-      <form class="add-habit">
-        <input
-          class="habit"
-          type="text"
-          name="habit"
-          placeholder="Enter Habit Name"
-          required
-        />
-        <input
-          type="number"
-          name="reps"
-          placeholder="# of Repetitions"
-          min="1"
-          required
-        />
-        <div class="frequency">
-          <label for="timeframe">Frequency: </label>
-          <select name="timeframe" id="timeframe">
-            <option value="Daily">Daily</option>
-            <option value="Weekly">Weekly</option>
-            <option value="Monthly">Monthly</option>
-            <option value="Yearly">Yearly</option>
-          </select>
+<head>
+    <title>HabitTracker</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glegoo&family=Merriweather&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="ww">
+    <div class="row">
+
+        <div class="col-4">
+            <blockquote class="tweet-this"><p>You'll never change your life until you <strong>change</strong> something you <strong>do daily</strong>. The secret of your success is found in your <strong>daily routine</strong>.
+                <span>- John C. Maxwell</span></p>
+            </blockquote>
+
+            <div>
+                <img src="images/habitImage3.jpg" alt="Image about Habit" width="70%" height="auto">
+            </div>
         </div>
-        <input type="submit" value="+ Add Habit" />
-      </form>
+
+        <div class="col-4">
+            <h3>HABIT TRACKER</h3>
+            <div class="myContainer">
+                <div>
+                    <form class="add-habit">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="habit" placeholder="Enter Habit Name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <input class="form-control" type="number" name="reps" placeholder="# of Repetitions" min="1" required />
+                        </div>
+
+                        <div class="frequency">
+                            <label class="me-2" for="timeframe">Frequency: </label>
+                            <select class="form-select" name="timeframe" id="timeframe">
+                                <option value="Daily" selected>Daily</option>
+                                <option value="Weekly">Weekly</option>
+                                <option value="Monthly">Monthly</option>
+                                <option value="Yearly">Yearly</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <input class="form-control" type="submit" value="+ Add Habit" />
+                        </div>
+                    </form>
+
+                    <ul class="habits list-group">
+                        <li class="list-group-item">Loading...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div>
+                <img src="images/habitImage4.jpg" alt="Image about Habit" width="90%" height="auto">
+            </div>
+            <blockquote class="tweet-this"><p><strong>Motivation</strong> is what gets you started. <strong>Habit</strong> is what keeps<br>you going.
+                <span>- Jim Rohn</span></p>
+            </blockquote>
+
+        </div>
 
     </div>
-  </body>
+</div>
+
+<script src="js/app.js"></script>
+</body>
 </html>
