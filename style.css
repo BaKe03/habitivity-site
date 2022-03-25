@@ -5,30 +5,47 @@
 .col-7{
     padding-top: 30px;
 }
+
+.col-4{
+    display: flex;
+    justify-content: center;
+}
+
+/*#navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}*/
 .informationDiv{
-    background-color: rgba(176, 193, 196, 0.92);
-    margin-top:30px;
+    background-color: #cceeff;/*whitesmoke; ;rgba(176, 193, 196, 0.92);*/
+    width: 700px;
+    /*margin-top:30px;*/
     padding: 10px 10px 10px 10px;
     border-radius: 7px;
-    margin-bottom: 30px;
+    /*margin-bottom: 20px;*/
+    margin: auto;
+    text-align: center;
 }
 .information{
     font-size: 20px;
+    /*color: white;*/
 }
 .getStart{
     display:block;
     margin:auto;
+    height: 40px;
     width: 180px;
-    background-color: rgb(27, 36, 40);
-    border-color: black;
+    background-color:#00aaff;
+    border-color: #00aaff;
     border-radius: 4px;
 }
-.getStartLink:hover {color:rgba(176, 193, 196, 0.92); font-weight: 1500;}
+.getStartLink:hover {color:rgba(255, 255, 255); font-weight: 1500;}
 
 .getStartLink{
     text-decoration: none;
     color: white;
     font-size: 20px;
+    padding-bottom: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .card{
@@ -37,4 +54,23 @@
 }
 .row{
     margin-bottom: 20px;
+}
+.container-md {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.habitImage {
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.description {
+    tecolor: white;
+    text-align: center;
+    padding-top: 30px;
+    /*color: #00aaff;*/ 
+}
+h5{
+    margin-top: 30px;
 }
